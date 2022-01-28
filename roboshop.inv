@@ -1,22 +1,22 @@
 [FRONTEND]
-frontend-dev.roboshop.internal APP_VERSION=1.0.1
+frontend-dev.ajitdevops-internal APP_VERSION=1.0.1
 [MONGODB]
-mongodb-dev.roboshop.internal
+mongodb-dev.ajitdevops-internal
 [REDIS]
-redis-dev.roboshop.internal
+redis-dev.ajitdevops-internal
 [RABBITMQ]
-rabbitmq-dev.roboshop.internal
+rabbitmq-dev.ajitdevops-internal
 [MYSQL]
-mysql-dev.roboshop.internal
+mysql-dev.ajitdevops-internal
 [CATALOGUE]
-catalogue-dev.roboshop.internal APP_VERSION=1.0.0
+catalogue-dev.ajitdevops-internal APP_VERSION=1.0.0
 [USER]
-user-dev.roboshop.internal APP_VERSION=1.0.0
+user-dev.ajitdevops-internal APP_VERSION=1.0.0
 [CART]
-cart-dev.roboshop.internal APP_VERSION=1.0.0
+cart-dev.ajitdevops-internal APP_VERSION=1.0.0
 [SHIPPING]
-shipping-dev.roboshop.internal APP_VERSION=1.0.1
+shipping-dev.ajitdevops-internal APP_VERSION=1.0.1
 [PAYMENT]
-payment-dev.roboshop.internal APP_VERSION=1.0.0
+payment-dev.ajitdevops-internal APP_VERSION=1.0.0
 [DISPATCH]
-dispatch-dev.roboshop.internal APP_VERSION=1.0.0
+dispatch-dev.ajitdevops-internal APP_VERSION=1.0.0
