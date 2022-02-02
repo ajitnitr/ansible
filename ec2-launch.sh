@@ -9,19 +9,14 @@ if [ -z "$1" ]; then
 fi
 
 COMPONENT=$1
-ENV=$2
-
-if [ ! -z "$ENV" ]; then
-  ENV="-${ENV}"
-fi
 
 
 TEMP_ID="lt-03686338cb210a35d"
-TEMP_VER=5
+TEMP_VER=1
 ZONE_ID=Z09753452HBBRZETZK5J2
 
+## Check if instance is already ther e
 CREATE_INSTANCE() {
-  ## Check if instance is already there
   aws ec2 describe-instances --filters "Name=tag:Name,Values=${COMPONENT}" | jq .Reservations[].Instances[].State.Name | sed 's/"//g' | grep -E 'running|stopped' &>/dev/null
   if [ $? -eq -0 ]; then
     echo -e "\e[1;33mInstance is already there\e[0m"
@@ -39,12 +34,11 @@ CREATE_INSTANCE() {
 }
 
 if [ "$COMPONENT" == "all" ]; then
-  for comp in frontend mongodb catalogue redis user cart mysql shipping rabbitmq payment dispatch ; do
-    COMPONENT=$comp$ENV
+  for comp in frontend mongodb catalogue ; do
+    COMPONENT=$comp
     CREATE_INSTANCE
   done
 else
-  COMPONENT=$COMPONENT$ENV
   CREATE_INSTANCE
 fi
 
