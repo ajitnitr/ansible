@@ -15,8 +15,8 @@ TEMP_ID="lt-03686338cb210a35d"
 TEMP_VER=1
 ZONE_ID=Z09753452HBBRZETZK5J2
 
-## Check if instance is already ther e
 CREATE_INSTANCE() {
+  ## Check if instance is already there
   aws ec2 describe-instances --filters "Name=tag:Name,Values=${COMPONENT}" | jq .Reservations[].Instances[].State.Name | sed 's/"//g' | grep -E 'running|stopped' &>/dev/null
   if [ $? -eq -0 ]; then
     echo -e "\e[1;33mInstance is already there\e[0m"
