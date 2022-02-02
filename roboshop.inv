@@ -1,5 +1,5 @@
 [FRONTEND]
-frontend-dev.ajitdevops-internal APP_VERSION=1.0.1
+frontend.ajitdevops-internal
 [MONGODB]
 mongodb-dev.ajitdevops-internal
 [REDIS]
