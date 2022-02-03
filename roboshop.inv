@@ -1,7 +1,7 @@
 [FRONTEND]
 frontend.ajitdevops-internal
 [MONGODB]
-mongodb-dev.ajitdevops-internal
+mongodb.ajitdevops-internal
 [REDIS]
 redis-dev.ajitdevops-internal
 [RABBITMQ]
