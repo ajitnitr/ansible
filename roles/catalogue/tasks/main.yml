@@ -1,6 +1,6 @@
 - name: install node nodejs serice
   ansible.builtin.yum:
-    name: nodejs
+    name:
       - nodejs
       - make
       - gcc-c++
