@@ -1,7 +1,7 @@
 [FRONTEND]
-frontend.ajitdevops-internal
+frontend-dev.ajitdevops-internal
 [MONGODB]
-mongodb.ajitdevops-internal
+mongodb-dev.ajitdevops-internal
 [REDIS]
 redis-dev.ajitdevops-internal
 [RABBITMQ]
@@ -9,7 +9,7 @@ rabbitmq-dev.ajitdevops-internal
 [MYSQL]
 mysql-dev.ajitdevops-internal
 [CATALOGUE]
-catalogue.ajitdevops-internal APP_VERSION=1.0.0
+catalogue-dev.ajitdevops-internal APP_VERSION=1.0.0
 [USER]
 user-dev.ajitdevops-internal APP_VERSION=1.0.0
 [CART]
