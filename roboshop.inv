@@ -9,7 +9,7 @@ rabbitmq-dev.ajitdevops-internal
 [MYSQL]
 mysql-dev.ajitdevops-internal
 [CATALOGUE]
-catalogue-dev.ajitdevops-internal APP_VERSION=1.0.0
+catalogue.ajitdevops-internal APP_VERSION=1.0.0
 [USER]
 user-dev.ajitdevops-internal APP_VERSION=1.0.0
 [CART]
