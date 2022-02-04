@@ -8,6 +8,12 @@
   hosts: MONGODB
   become: yes
   roles:
-    - mongodb    
+    - mongodb  
+    
+- name: Catalogue setup
+  hosts: CATALOGUE
+  become: yes
+  roles:
+    - catalogue    
 
 
