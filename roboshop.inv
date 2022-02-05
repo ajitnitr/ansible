@@ -9,14 +9,14 @@ rabbitmq-dev.ajitdevops-internal
 [MYSQL]
 mysql-dev.ajitdevops-internal
 [CATALOGUE]
-catalogue-dev.ajitdevops-internal APP_VERSION=1.0.0
+catalogue-dev.ajitdevops-internal
 [USER]
-user-dev.ajitdevops-internal APP_VERSION=1.0.0
+user-dev.ajitdevops-internal
 [CART]
-cart-dev.ajitdevops-internal APP_VERSION=1.0.0
+cart-dev.ajitdevops-internal
 [SHIPPING]
-shipping-dev.ajitdevops-internal APP_VERSION=1.0.1
+shipping-dev.ajitdevops-internal
 [PAYMENT]
-payment-dev.ajitdevops-internal APP_VERSION=1.0.0
+payment-dev.ajitdevops-internal
 [DISPATCH]
-dispatch-dev.ajitdevops-internal APP_VERSION=1.0.0
+dispatch-dev.ajitdevops-internal
