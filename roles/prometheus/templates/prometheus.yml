@@ -13,7 +13,7 @@ alerting:
 
 # Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
 rule_files:
-    - "records.yml"
+  - "records.yml"
   # - "second_rules.yml"
 
 # A scrape configuration containing exactly one endpoint to scrape:
@@ -27,11 +27,21 @@ scrape_configs:
 
     static_configs:
       - targets: ["localhost:9090"]
-  - job_name: "ec2-workstation"
-    static_configs:
-      - targets: ["172.31.87.140:9100"]
+#  - job_name: "ec2-nodes"
+#    static_configs:
+#      - targets: ["172.31.84.127:9100"]
 
-  - job_name: "ec2-frontend"
-    static_configs:
-      - targets: ["172.31.80.69:9100"]
+  - job_name: 'ec2-nodes'
+    ec2_sd_configs:
+      - region: us-east-1
+#        access_key: PUT_THE_ACCESS_KEY_HERE
+#        secret_key: PUT_THE_SECRET_KEY_HERE
+        port: 9100
+ # - job_name: "ec2-workstation"
+ #   static_configs:
+ #     - targets: ["172.31.87.140:9100"]
+
+ # - job_name: "ec2-frontend"
+ #   static_configs:
+  #    - targets: ["172.31.80.69:9100"]
   
