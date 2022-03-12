@@ -16,7 +16,7 @@ if [ ! -z "$ENV" ]; then
 fi
 
 
-TEMP_ID="ami-0b90346fbb8e13c09"
+TEMP_ID="lt-0fb5582f5420f1a5c"
 TEMP_VER=1
 ZONE_ID=Z09753452HBBRZETZK5J2
 
